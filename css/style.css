@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.counter {
+    background-color: aquamarine;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+}
+
+.digit {
+    position: absolute;
+    top: -60px;
+    
+    
+}
+
+#digit-10 {
+    animation-name: counter10;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes counter10 {
+    from {font-size: 0em;}
+    to {font-size: 8em;}
+    from {top: -60px ;}
+    to {top: 100px ;}
+    from {left: 50% ;}
+    to {left: 25% ;}
+
+    
+    
+}
+
+#digit-9 {
+    animation-name: counter9;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    color: red;
+    
+}
+
+@keyframes counter9 {
+    from {font-size: 0em;}
+    to {font-size: 8em;}
+    from {top: -60px ;}
+    to {top: 100px ;}
+    from {left: 50% ;}
+    to {left: 40% ;}
+
+    
+    
+}
